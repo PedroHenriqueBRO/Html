@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <h2>Formulário</h2>
+    <p>Cadastre suas informações</p>
+    <hr>
+    <!--method é para dizer o metodo que o formulario será enviado-->
+    <!--post n deixa os requicios do form na url e o get deixa-->
+
+    <!--action é para que lugar será enviado as informações-->
+    <!--name é o tipo da variável que tanto o inputo como o form em si são identificado-->
+    <!--através do name o javascript pode acessar os retornos dos campos input e do form em si-->
+    <!--pode se usar o target no form para dizer se o envio vai ser na mesma pagina ou aberta em outra-->
+    <!--autocomplete se você quer deixar o navegador poder gravar as informações do formulário para futuros cadastros-->
+    <!--onsubmit permite emitir um alerta quando o button for ativado , "formulário enviado" e para isso o button tem de estar como type submit-->
+    <form name="signup" onsubmit="alert('Formulário enviado')" method="post" autocomplete="off"> 
+        <p>Nome : <input type="text" name="name"></p>
+        <p>Email : <input type="email" name="email"></p>
+        <p>Senha : <input type="password" name="password" ></p>
+        <p>Confirmar senha : <input type="password" name="password"></p>
+        <p>Idade : <input type="number" name="number"></p>
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>
