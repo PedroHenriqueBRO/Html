@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pizza</h1>
+    <h2>Adicionais</h2>
+    <form method="get">
+    <ul>
+    <!--o input checkbox tem a opção disable que desabilita a funcionabilidade do butão deviado a algum contexto condizente-->
+    <li><input type="checkbox" name="opcional[]" value="queijo"><label> + queijo</label></li>
+    <li><p><input type="checkbox" name="opcional[]" value="bacon"><label> + bacon</label></p></li>
+    <li><p><input type="checkbox" name="opcional[]" value="calabresa"><label> + calabresa</label></p></li>
+    <li><p><input type="checkbox" name="opcional[]" value="carne"><label> + carne</label></p></li>
+    </ul>
+    <h2>Talher</h2>
+    <!--br é quebra de linha-->
+    Sim:<input type="radio" value="sim" name="Escolha"><br>
+    Não:<input type="radio" value="não" name="Escolha"><br>
+    <!--Para o radio funcionar só uma escolha é preciso de definir o name dos radio com a mesma identificação-->
+    <h2>Bebida</h2>
+    <input type="radio" value="Refri" name="Esbebida">Refrigerante<br>
+    <input type="radio" value="Suco" name="Esbebida">Suco<br>
+    <input type="radio" value="Água" name="Esbebida">Água<br>
+    <br>
+    <button>Enviar</button>
+    </form>
+    
+</body>
+</html>

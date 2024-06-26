@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        
+        table thead th{
+            background-color:bisque;
+            color:cadetblue
+
+        }
+        table tbody td{
+            background-color:chartreuse
+        }
+        table tfoot td{
+            background-color: black;
+            color: aliceblue;
+
+        }
+    </style>
+    <!--Cria uma tabela , border coloca borda , width largura ,align alinha a tabela no centro ,cellspacing coloca espaçamento entre as celulas e cellpadding coloca espaçamento entro o conteudo da celula para as bordas dela-->
+    <table border="20" width="350" align="center" cellspacing="5" cellpadding="5">
+        <caption>Tabela de refeições</caption>
+        <!--tr seria as linhas da tabela que nesse caso são duas linhas e para cada linha você atribui colunas com td -->
+        <!--th para definir o cabeçário da tabela, fica dentro do tr-->
+    <thead>
+        <th colspan="4" style="background-color: black; color: aqua;">Minhas Refeições</th>
+        <tr id="1">
+            <th>Refeições</th>
+            <th>Arroz</th>
+            <th>Frango</th>
+            <th>Carne</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr id="2">
+                
+                <td>Almoço</td>
+                <td>450g</td>
+                <td>200g</td>
+                <td>0g</td>
+            </tr>
+            <tr id="3">
+                
+                <td>Almoço 2</td>
+                <td>450g</td>
+                <td>200g</td>
+                <td>0g</td>
+            </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">Refeições </td>
+            <td colspan="2">2</td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>
